@@ -1,0 +1,154 @@
+@import "src/global.css";
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+main {
+    background: url(img/back.jpg); /* Фоновый цвет и фоновый рисунок*/
+	color: #000000; /*Цвет текста на странице*/
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+}
+
+.or_use {
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    /* Выравнивание заголовка по центру, 
+    ** можно использовать left, right */
+    text-align: center;
+    /* Тут можно добавить другие стили для заголовка */
+    font-size: 19px;
+    margin-top: 20px;
+
+}
+.or_use span {
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    vertical-align: middle;
+}
+.or_use:before,
+.or_use:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 2px;
+    /* Добавляем цвет для линии */
+    background-color: #FF9D60;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.or_use:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -14px;
+}
+.or_use:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -14px;
+}
+
+.enter_account {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    justify-content: left;
+    padding: 10px 0px 9px 10px;
+}
+
+.text {
+    font-size: 19px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .phone_input {
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px 0px 10px 15px;
+    gap: 10px;
+    border: 2px solid #929292;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+    width: 300px;
+    height: 39px;
+    margin-top: 37px;
+    margin-bottom: 35px;
+    margin-left: 46px;
+}
+
+.phone_input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6D6D6D;
+} */
+
+.center_container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.google {
+    height: 39px;
+    margin-top: 15px;
+    margin-bottom: 101px;
+}
+/* 
+.create {
+    padding: 14px;
+    font-weight: 700;
+    align-self: center;
+
+    position:relative;
+    width: 106px;
+
+    background: #011627;
+    border-radius: 10px;
+    color: #FFFFFF;
+} */
+
+.usage {
+    text-align: center;
+}
+
+.white {
+    color: #F8F8F8;
+    background: none;
+}
