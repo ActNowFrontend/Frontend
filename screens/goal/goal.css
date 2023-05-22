@@ -1,0 +1,101 @@
+@import "/styles/global.css";
+
+.goal-img {
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
+
+.main-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 14px;
+}
+
+.info-block {
+    margin-top: 85px;
+    margin-bottom: 14px;
+    background-color: var(--main-bg);
+    height: 100px;
+    border-radius: 20px;
+
+    padding: 8px 10px;
+    display: grid;
+    grid-template: "a a" "a a";
+    align-content: center;
+    grid-gap: 10px;
+}
+
+.info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.info-icon {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-bg);
+    background-color: var(--dark-blue);
+}
+
+.info-text {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.info-heading {
+    color: var(--gray2);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info-about {
+    color: var(--dark-blue);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-info {
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.text {
+    height: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
+
+.read-more-btn {
+    background-color: var(--dark-blue);
+    color: var(--accent-cyan);
+    font-size: 20px;
+    padding: 2.5px 5px;
+    border-radius: 25px;
+}
+
+.histories-block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-top: 2px var(--dark-blue) solid;
+    padding: 40px 0;
+    gap: 30px;
+}
+
+.histories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
