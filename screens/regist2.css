@@ -1,0 +1,99 @@
+@import "global.css";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    font-family: 'Roboto';
+}
+
+main {
+    background: url(img/back.jpg); /* Фоновый цвет и фоновый рисунок*/
+	color: #000000; /*Цвет текста на странице*/
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    display: flex;
+    flex-direction: column;
+}
+
+.center_container {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.avatar {
+    border-radius: 70%;
+
+    align-self: center;
+
+    background-color: #F8F8F8;
+    color: #FF9D60;
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 4px darkslategray;
+
+}
+
+.profile_photo {
+    font-weight: 500;
+    align-self: center;
+    font-size: 19px;
+    line-height: 22px;
+    display: flex;
+    justify-content: left;
+    padding: 10px 0px 9px 10px;
+}
+
+.input {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px
+}
+
+/* .create {
+    padding: 14px 12px;
+    font-weight: 700;
+    align-self: center;
+
+    position:relative;
+
+    width: 106px;
+    /* height: 47px; */
+    /* margin-top: 56px;
+
+    background: #011627;
+    border-radius: 10px;
+    color: #FFFFFF;
+} */ */
+
+/* .main_input {
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px 0px 10px 15px;
+    gap: 10px;
+    border: 2px solid #929292;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+    width: 300px;
+    height: 39px;
+    margin-top: 27px;
+}
+
+.main_input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6D6D6D;
+} */
