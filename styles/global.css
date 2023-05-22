@@ -221,3 +221,74 @@ input.error {
 input.success {
     border-color: var(--success);
 }
+.text{
+    width: 318px;
+    line-height: 1;
+}
+.head{
+    width: 100%;
+    height: 262px;
+    position: fixed;
+    background-color: var(--gray4);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+.main{
+    position: relative;
+    top: 262px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.foto_elem img{
+width: 100%;
+height: 100%;
+}
+.foto_goals{
+    margin: auto;
+}
+.fon{
+    width: 100vw;
+    height: 100vh;
+}
+.foto{
+   z-index: -1;
+    position: absolute;
+}
+.user_block{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 413px;
+    left: 85%;
+
+}
+.mainBlock{
+    position: relative;
+}
+.description{
+    color: var(--gray5);
+    position: absolute;
+    width: 90%;
+    top:  600px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.goals_elem{
+    width: 35px;
+    height: 35px;
+    background-color: #20DECB;
+    border-radius: 20px;
+    position: absolute;
+    left:  85%;
+    
+}
