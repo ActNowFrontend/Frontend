@@ -1,0 +1,51 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit a story</title>
+    <link rel="stylesheet" href="story_submit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        Публикация истории
+    </div>
+    <div class="top">
+        <div class="goal-info">
+            <div class="goal-info__name">
+                Вокруг света за 2 часа
+            </div>
+            <div class="goal-info__description">
+                Нужно пройти пешком как можно большее расстояние за два часа. Следует использовать любой трекер шагов и
+                приложить скриншот/фото пройденного пути. Также можно добавить фото/ видео самого процесса ходьбы.
+                Ходить интересно и полезно, улучшается кровообращение, свежий воздух, сжигается много калорий,
+                вырабатывается витамин д, улучшается работа щитовидной железы, а ещё можно встретить интересных людей
+            </div>
+            <img id="expand-description" src="/src/story_submit/arrow-down.svg" alt="">
+        </div>
+        <div class="upload">
+            <label for="file-input">
+                <img alt="upload" src="/src/story_submit/upload.svg">
+            </label>
+            <input id="file-input" type="file"/>
+        </div>
+    </div>
+    <div class="inputs">
+        <div class="inputs__description">
+            <div class="inputs__description__info">
+                Добавить описание
+            </div>
+                <input class="inputs__description__text" type="text" placeholder="Введите описание истории длиной не более 500 символов">
+        </div>
+        <div class="inputs__submit">
+            <button class="btn btn-wide btn-orange inputs__submit__button" type="submit">
+                Опубликовать
+            </button>
+        </div>
+    </div>
+</body>
+</html>
